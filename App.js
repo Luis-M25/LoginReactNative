@@ -10,6 +10,7 @@ export default function App() {
   return (
     
     <View style={styles.container}>
+      // Creación del fondo de pantalla con la imagen de fondo.png
       <ImageBackground source={require('./assets/fondo.png')} 
       style={{ width: 360, height: 900, position: 'absolute', right: 0, top: 0 }} 
       />
@@ -17,6 +18,7 @@ export default function App() {
       <Text style={styles.title}
       >Bienvenido</Text>
 
+      // Creación de los campos de texto para el correo electrónico y la contraseña, con sus respectivos íconos
       <View style={styles.inputContainer}>
         <Entypo name="mail" size={22} color="#6f6f6f" style={styles.inputIcon} />
         <TextInput
@@ -26,6 +28,7 @@ export default function App() {
         />
       </View>
 
+      // Creación de los botones para recuperar el correo electrónico y la contraseña, con estilos de texto subrayado y colores específicos
       <TouchableOpacity>
         <Text style={{ color: '#000000', textDecorationLine: 'underline', marginBottom: 20, top: -15, left: 55 }}>¿Olvidaste tu correo?</Text>
       </TouchableOpacity>
